@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="table.css">
+    <style>
+        body{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://uhchat.net/code.php?f=e0dfe9"></script>
+    <div id="containerLocal">
+        <table>
+          <caption>
+           <h3>Table Công Việc</h3>
+          </caption>
+          <thead>
+            <tr>
+              <td id="out"></td>
+              <th scope="col">Dịch Vụ</th>
+              <th scope="col">Đối Tác</th>
+              <th scope="col">Hợp Đồng</th>
+              <th scope="col">Khách Hàng</th>
+              <th scope="col">sản Phẩm</th>
+              <th scope="col">Đóng Góp</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Thứ 2</th>
+              <td><input id="datiTable1" type="text" placeholder="thêm.."></td>
+              <td><input id="datiTable2" type="text" placeholder="thêm.."></td>
+              <td><input id="datiTable3" type="text" placeholder="thêm.."></td>
+              <td><input id="datiTable4" type="text" placeholder="thêm.."></td>
+              <td><input id="datiTable5" type="text" placeholder="thêm.."></td>
+              <td><input id="datiTable6" type="text" placeholder="thêm.."></td>
+            </tr>
+            <tr>
+              <th scope="row">Thứ 3</th>
+               <td><input id="datiTable7" type="text" placeholder="thêm.."></td>
+               <td><input id="datiTable8" type="text" placeholder="thêm.."></td>
+               <td><input id="datiTable9" type="text" placeholder="thêm.."></td>
+              <td><input id="datiTable10" type="text" placeholder="thêm.."></td>
+              <td><input id="datiTable11" type="text" placeholder="thêm.."></td>
+              <td><input id="datiTable12" type="text" placeholder="thêm.."></td>
+            </tr>
+            <tr>
+              <th scope="row">Thứ 4</th>
+              <td><input id="datiTable13" type="text" placeholder="thêm.."></td>
+              <td><input id="datiTable14" type="text" placeholder="thêm.."></td>
+              <td><input id="datiTable15" type="text" placeholder="thêm.."></td>
+              <td><input id="datiTable16" type="text" placeholder="thêm.."></td>
+              <td><input id="datiTable17" type="text" placeholder="thêm.."></td>
+              <td><input id="datiTable18" type="text" placeholder="thêm.."></td>
+            </tr>
+            <tr>
+              <th scope="row">Thứ 5</th>
+              <td><input id="datiTable19" type="text" placeholder="thêm.."></td>
+              <td><input id="datiTable20" type="text" placeholder="thêm.."></td>
+              <td><input id="datiTable21" type="text" placeholder="thêm.."></td>
+              <td><input id="datiTable22" type="text" placeholder="thêm.."></td>
+              <td><input id="datiTable23" type="text" placeholder="thêm.."></td>
+              <td><input id="datiTable24" type="text" placeholder="thêm.."></td>
+            </tr>
+            <tr>
+              <th scope="row">Thứ 6</th>
+              <td><input id="datiTable25" type="text" placeholder="thêm.."></td>
+              <td><input id="datiTable26" type="text" placeholder="thêm.."></td>
+              <td><input id="datiTable27" type="text" placeholder="thêm.."></td>
+              <td><input id="datiTable28" type="text" placeholder="thêm.."></td>
+              <td><input id="datiTable29" type="text" placeholder="thêm.."></td>
+              <td><input id="datiTable30" type="text" placeholder="thêm.."></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="DataOptions">
+        <input id="datiTable1" type="button" value="Lưu"
+             onclick="SaveDataLocal ();" />
+        <input type="button" value="Khôi Phục"
+             onclick="RestoreDataLocal ();" />
+        <input type="button" value="Xoá"
+             onclick="DeleteDataLocal ();" />
+             </div>
+        </div>
+        
+        
+        <!--sessionStorage-->
+        
+        <div id="containerSession">
+            <table>
+          <caption>
+           <h3>Table Thống Kê tiền tệ</h3>
+          </caption>
+          <thead>
+            <tr>
+              <td id="out"></td>
+              <th scope="col">Tổng Doanh THu</th>
+              <th scope="col">Tổng Thu Nhập</th>
+              <th scope="col">Tổng Thu Chi</th>
+              <th scope="col">Tổng Lãi</th>
+              <th scope="col">Tổng Bù Lỗ</th>
+              <th scope="col">Tống Thuế</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Thứ 2</th>
+              <td><input id="dataTable1" type="text" placeholder="Nhập....."></td>
+              <td><input id="dataTable2" type="text" placeholder="Nhập....."></td>
+              <td><input id="dataTable3" type="text" placeholder="Nhập....."></td>
+              <td><input id="dataTable4" type="text" placeholder="Nhập....."></td>
+              <td><input id="dataTable5" type="text" placeholder="Nhập....."></td>
+              <td><input id="dataTable6" type="text" placeholder="Nhập....."></td>
+            </tr>
+            <tr>
+              <th scope="row">Thứ 3</th>
+               <td><input id="dataTable7" type="text" placeholder="Nhập....."></td>
+               <td><input id="dataTable8" type="text" placeholder="Nhập....."></td>
+               <td><input id="dataTable9" type="text" placeholder="Nhập....."></td>
+              <td><input id="dataTable10" type="text" placeholder="Nhập....."></td>
+              <td><input id="dataTable11" type="text" placeholder="Nhập....."></td>
+              <td><input id="dataTable12" type="text" placeholder="Nhập....."></td>
+            </tr>
+            <tr>
+              <th scope="row">THứ 4</th>
+              <td><input id="dataTable13" type="text" placeholder="Nhập....."></td>
+              <td><input id="dataTable14" type="text" placeholder="Nhập....."></td>
+              <td><input id="dataTable15" type="text" placeholder="Nhập....."></td>
+              <td><input id="dataTable16" type="text" placeholder="Nhập....."></td>
+              <td><input id="dataTable17" type="text" placeholder="Nhập....."></td>
+              <td><input id="dataTable18" type="text" placeholder="Nhập....."></td>
+            </tr>
+            <tr>
+              <th scope="row">Thứ 5</th>
+              <td><input id="dataTable19" type="text" placeholder="Nhập....."></td>
+              <td><input id="dataTable20" type="text" placeholder="Nhập....."></td>
+              <td><input id="dataTable21" type="text" placeholder="Nhập....."></td>
+              <td><input id="dataTable22" type="text" placeholder="Nhập....."></td>
+              <td><input id="dataTable23" type="text" placeholder="Nhập....."></td>
+              <td><input id="dataTable24" type="text" placeholder="Nhập....."></td>
+            </tr>
+            <tr>
+              <th scope="row">Thứ 6</th>
+              <td><input id="dataTable25" type="text" placeholder="Nhập....."></td>
+              <td><input id="dataTable26" type="text" placeholder="Nhập....."></td>
+              <td><input id="dataTable27" type="text" placeholder="Nhập....."></td>
+              <td><input id="dataTable28" type="text" placeholder="Nhập....."></td>
+              <td><input id="dataTable29" type="text" placeholder="Nhập....."></td>
+              <td><input id="dataTable30" type="text" placeholder="Nhập....."></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="DataOptions">
+        <input id="dataTable1" type="button" value="Lưu"
+             onclick="SaveDataSession ();" />
+        <input type="button" value="Khôi Phục"
+             onclick="RestoreDataSession ();" />
+        <input type="button" value="Xóa"
+             onclick="DeleteDataSession ();" />
+             </div>
+        </div>
+        <script src="table.js"></script>
+</body>
+</html>
